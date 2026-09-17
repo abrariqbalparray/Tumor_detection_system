@@ -1,6 +1,7 @@
 
 # Import os for working with folders and file paths.
 import os
+os.environ["CUDA_VISIBLE_DEVICES"]="-1"
 
 # Import TensorFlow to load and use the trained model.
 import tensorflow as tf
