@@ -43,7 +43,13 @@ os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 # ------------------------------------------------------------
 
 # Location of the trained model.
-MODEL_PATH = "model/final_model.keras"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+MODEL_PATH = os.path.join(
+    BASE_DIR,
+    "model",
+    "final_model.keras"
+)
 
 # Model expects images with this size.
 IMAGE_SIZE = (224, 224)
@@ -283,17 +289,4 @@ def about():
 
 # This ensures the application starts only when app.py
 # is executed directly.
-if __name__ == "__main__":
-    import os
-    port=int(os.environ.get("PORT",5000))
 
-    # Start the Flask development server.
-    #
-    # debug=True automatically reloads the application when
-    # code changes and shows useful error messages during
-    # development.
-    app.run(
-        host="0.0.0.0",
-        port=port,
-        debug=False
-    )
