@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Defines the character encoding used by this webpage. -->
+    <meta charset="UTF-8">
+
+    <!-- Makes the website responsive on phones, tablets, and laptops. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Text displayed in the browser tab. -->
+    <title>Brain MRI Tumor Detection</title>
+
+    <!-- Connects this HTML file to our CSS stylesheet. -->
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         NAVIGATION BAR
+         ===================================================== -->
+
+    <nav class="navbar">
+
+        <div class="nav-container">
+
+            <!-- Website logo / project name. -->
+            <a href="/" class="logo">
+                Brain MRI <span>Detection</span>
+            </a>
+
+            <!-- Navigation links. -->
+            <div class="nav-links">
+
+                <!-- Home page link. -->
+                <a href="/">Home</a>
+
+                <!-- About page link. -->
+                <a href="/about">About</a>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- =====================================================
+         HERO SECTION
+         ===================================================== -->
+
+    <main>
+
+        <section class="hero">
+
+
+            <!-- =================================================
+                 LEFT SIDE OF HERO
+                 ================================================= -->
+
+            <div class="hero-content">
+
+
+                <!-- Small project badge. -->
+                <div class="badge">
+                    ✦ AI POWERED&nbsp;&nbsp;•&nbsp;&nbsp;ACADEMIC PROJECT
+                </div>
+
+
+                <!-- Main project heading. -->
+                <h1>
+
+                    Brain MRI
+
+                    <!-- Second line receives the gradient effect. -->
+                    <span>Tumor Detection</span>
+
+                </h1>
+
+
+                <!-- Project description. -->
+                <p class="hero-description">
+
+                    Upload a brain MRI image to analyze whether the
+                    image belongs to the <strong>Tumor</strong> or
+                    <strong>No Tumor</strong> class using a trained
+                    deep learning model.
+
+                </p>
+
+
+
+                <!-- =================================================
+                     PROJECT STATISTICS
+                     ================================================= -->
+
+                <div class="stats">
+
+
+                    <!-- Accuracy statistic. -->
+                    <div class="stat-card">
+
+                        <span class="stat-number">
+                            92.73%
+                        </span>
+
+                        <span class="stat-label">
+                            Test Accuracy
+                        </span>
+
+                    </div>
+
+
+                    <!-- Dataset statistic. -->
+                    <div class="stat-card">
+
+                        <span class="stat-number">
+                            10,093
+                        </span>
+
+                        <span class="stat-label">
+                            MRI Images
+                        </span>
+
+                    </div>
+
+
+                    <!-- Model statistic. -->
+                    <div class="stat-card">
+
+                        <span class="stat-number">
+                            MobileNetV2
+                        </span>
+
+                        <span class="stat-label">
+                            Deep Learning Model
+                        </span>
+
+                    </div>
+
+
+                    <!-- Speed / simplicity statistic. -->
+                    <div class="stat-card">
+
+                        <span class="stat-number">
+                            Fast
+                        </span>
+
+                        <span class="stat-label">
+                            Upload &amp; Predict
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- =================================================
+                 RIGHT SIDE - MRI UPLOAD CARD
+                 ================================================= -->
+
+            <div class="upload-card">
+
+
+                <!-- Upload card heading. -->
+                <h2>
+                    Upload MRI Image
+                </h2>
+
+
+                <!-- Upload instructions. -->
+                <p>
+
+                    Select a JPG, JPEG or PNG image of a
+                    brain MRI scan to detect tumor.
+
+                </p>
+
+
+
+                <!-- =================================================
+                     UPLOAD FORM
+                     ================================================= -->
+
+                <!-- Sends the selected image to Flask /predict route. -->
+                <form action="/predict"
+                      method="POST"
+                      enctype="multipart/form-data">
+
+
+                    <!-- MRI upload area. -->
+                    <div class="upload-area">
+
+
+                        <!--
+                            File input.
+
+                            name="file" is extremely important.
+                            Your Flask app searches for request.files["file"].
+                        -->
+
+                        <input
+                            type="file"
+                            name="file"
+                            accept=".jpg,.jpeg,.png"
+                            required
+                        >
+
+                    </div>
+
+
+
+                    <!-- =================================================
+                         ERROR MESSAGE
+                         ================================================= -->
+
+                    <!--
+                        Flask sends "error" when something goes wrong.
+                        This block only appears when an error exists.
+                    -->
+
+                    {% if error %}
+
+                        <div class="error">
+
+                            {{ error }}
+
+                        </div>
+
+                    {% endif %}
+
+
+
+                    <!-- =================================================
+                         DETECTION BUTTON
+                         ================================================= -->
+
+                    <button
+                        type="submit"
+                        class="detect-button"
+                    >
+
+                        🔍&nbsp;&nbsp; Detect Tumor
+
+                    </button>
+
+
+                </form>
+
+
+
+                <!-- =================================================
+                     DISCLAIMER
+                     ================================================= -->
+
+                <div class="disclaimer">
+
+                    🛡️ This system is intended for academic and
+                    research purposes only and is not a medical diagnosis.
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =====================================================
+             HOW IT WORKS SECTION
+             ===================================================== -->
+
+        <section class="info-section">
+
+
+            <!-- Section heading. -->
+            <h2>
+
+                How It <span>Works</span>
+
+            </h2>
+
+
+            <!-- Section subtitle. -->
+            <p class="info-subtitle">
+
+                Get a prediction in four simple steps.
+
+            </p>
+
+
+
+            <!-- =================================================
+                 FOUR STEPS
+                 ================================================= -->
+
+            <div class="steps">
+
+
+                <!-- STEP 1 -->
+                <div class="step">
+
+                    <div class="step-number">
+                        01
+                    </div>
+
+                    <h3>
+                        Upload Image
+                    </h3>
+
+                    <p>
+
+                        Choose a brain MRI image
+                        in JPG, JPEG or PNG format.
+
+                    </p>
+
+                </div>
+
+
+
+                <!-- STEP 2 -->
+                <div class="step">
+
+                    <div class="step-number">
+                        02
+                    </div>
+
+                    <h3>
+                        Preprocess
+                    </h3>
+
+                    <p>
+
+                        The uploaded image is resized
+                        and prepared for the model.
+
+                    </p>
+
+                </div>
+
+
+
+                <!-- STEP 3 -->
+                <div class="step">
+
+                    <div class="step-number">
+                        03
+                    </div>
+
+                    <h3>
+                        AI Analysis
+                    </h3>
+
+                    <p>
+
+                        MobileNetV2 analyzes the
+                        MRI image using deep learning.
+
+                    </p>
+
+                </div>
+
+
+
+                <!-- STEP 4 -->
+                <div class="step">
+
+                    <div class="step-number">
+                        04
+                    </div>
+
+                    <h3>
+                        Get Result
+                    </h3>
+
+                    <p>
+
+                        The system predicts
+                        Tumor or No Tumor.
+
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- =================================================
+                 INFORMATION CARDS
+                 ================================================= -->
+
+            <div class="info-cards">
+
+
+                <!-- Academic Project -->
+                <div class="info-card">
+
+                    <h3>
+                        🎓 Academic Project
+                    </h3>
+
+                    <p>
+
+                        A deep-learning based academic
+                        project developed for research
+                        and learning purposes.
+
+                    </p>
+
+                </div>
+
+
+
+                <!-- Deep Learning -->
+                <div class="info-card">
+
+                    <h3>
+                        🧠 Deep Learning
+                    </h3>
+
+                    <p>
+
+                        Uses transfer learning with
+                        MobileNetV2 for binary MRI
+                        image classification.
+
+                    </p>
+
+                </div>
+
+
+
+                <!-- AI Analysis -->
+                <div class="info-card">
+
+                    <h3>
+                        ⚡ AI Analysis
+                    </h3>
+
+                    <p>
+
+                        The application processes an
+                        uploaded MRI image and provides
+                        a model-based prediction.
+
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =====================================================
+         FOOTER
+         ===================================================== -->
+
+    <footer class="footer">
+
+
+        <!-- Left side of footer. -->
+        <div>
+
+            <strong>
+                Brain MRI Tumor Detection
+            </strong>
+
+            &nbsp; | &nbsp;
+
+            Academic Project
+
+        </div>
+
+
+        <!-- Right side of footer. -->
+        <div>
+
+            Built with ❤️ using
+            Python, TensorFlow &amp; Flask
+
+        </div>
+
+
+    </footer>
+
+
+
+</body>
+
+</html>

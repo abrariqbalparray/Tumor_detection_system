@@ -1,0 +1,779 @@
+/* =========================================================
+   GLOBAL SETTINGS
+   ========================================================= */
+
+/* Remove default browser spacing */
+* {
+    margin: 0;
+    padding: 0;
+
+    /* Make width and height calculations easier */
+    box-sizing: border-box;
+}
+
+
+/* Main body styling */
+body {
+
+    /* Modern system font */
+    font-family: Arial, Helvetica, sans-serif;
+
+    /* Dark medical/AI background */
+    background: #07111f;
+
+    /* Default text color */
+    color: #ffffff;
+
+    /* Minimum screen height */
+    min-height: 100vh;
+}
+
+
+/* =========================================================
+   NAVIGATION BAR
+   ========================================================= */
+
+.navbar {
+
+    /* Slightly transparent navigation */
+    background: rgba(7, 17, 31, 0.95);
+
+    /* Bottom border */
+    border-bottom: 1px solid #1e3a5f;
+
+    /* Keep navbar visible while scrolling */
+    position: sticky;
+    top: 0;
+
+    /* Navbar should stay above other elements */
+    z-index: 100;
+}
+
+
+.nav-container {
+
+    /* Maximum width of navbar content */
+    max-width: 1200px;
+
+    /* Center the content */
+    margin: auto;
+
+    /* Space inside navbar */
+    padding: 20px 30px;
+
+    /* Put logo and links on same line */
+    display: flex;
+
+    /* Separate logo and links */
+    justify-content: space-between;
+
+    /* Vertically align items */
+    align-items: center;
+}
+
+
+/* Website logo */
+.logo {
+
+    font-size: 22px;
+
+    font-weight: bold;
+
+    /* Light blue text */
+    color: #65d8ff;
+}
+
+
+/* Navigation links container */
+.nav-links {
+
+    display: flex;
+
+    gap: 30px;
+}
+
+
+/* Navigation links */
+.nav-links a {
+
+    color: #cbd8e8;
+
+    text-decoration: none;
+
+    font-size: 15px;
+
+    transition: 0.3s;
+}
+
+
+/* Navigation hover effect */
+.nav-links a:hover {
+
+    color: #65d8ff;
+}
+
+
+/* =========================================================
+   HERO SECTION
+   ========================================================= */
+
+.hero {
+
+    /* Maximum width */
+    max-width: 1200px;
+
+    /* Center content */
+    margin: auto;
+
+    /* Space around hero */
+    padding: 90px 30px;
+
+    /* Two-column layout */
+    display: grid;
+
+    grid-template-columns: 1.1fr 0.9fr;
+
+    /* Space between columns */
+    gap: 70px;
+
+    /* Vertically center */
+    align-items: center;
+}
+
+
+/* Small label above heading */
+.tag {
+
+    color: #65d8ff;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    margin-bottom: 20px;
+}
+
+
+/* Main heading */
+.hero-content h1 {
+
+    font-size: 58px;
+
+    line-height: 1.05;
+
+    margin-bottom: 25px;
+
+    letter-spacing: -2px;
+}
+
+
+/* Highlighted part of heading */
+.hero-content h1 span {
+
+    color: #65d8ff;
+
+    display: block;
+}
+
+
+/* Description */
+.description {
+
+    color: #a9b9cc;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    max-width: 620px;
+
+    margin-bottom: 35px;
+}
+
+
+/* =========================================================
+   STATISTICS
+   ========================================================= */
+
+.features {
+
+    display: flex;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+}
+
+
+/* Individual statistic */
+.feature {
+
+    background: #0c1c30;
+
+    border: 1px solid #1e3a5f;
+
+    border-radius: 14px;
+
+    padding: 18px 20px;
+
+    min-width: 150px;
+
+    transition: 0.3s;
+}
+
+
+/* Hover effect */
+.feature:hover {
+
+    transform: translateY(-5px);
+
+    border-color: #65d8ff;
+
+    background: #10253d;
+}
+
+
+/* Statistic number */
+.feature h3 {
+
+    color: #65d8ff;
+
+    font-size: 20px;
+
+    margin-bottom: 6px;
+}
+
+
+/* Statistic description */
+.feature p {
+
+    color: #8fa4bb;
+
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   UPLOAD CARD
+   ========================================================= */
+
+.upload-card {
+
+    background: #0c1c30;
+
+    border: 1px solid #244566;
+
+    border-radius: 24px;
+
+    padding: 35px;
+
+    /* Soft shadow */
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+
+    transition: 0.3s;
+}
+
+
+/* Card hover */
+.upload-card:hover {
+
+    border-color: #3c729c;
+}
+
+
+/* Card heading */
+.card-header {
+
+    text-align: center;
+
+    margin-bottom: 30px;
+}
+
+
+/* Upload icon */
+.upload-icon {
+
+    width: 55px;
+
+    height: 55px;
+
+    border-radius: 50%;
+
+    background: #123454;
+
+    color: #65d8ff;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 30px;
+
+    margin: 0 auto 18px;
+}
+
+
+/* Card title */
+.card-header h2 {
+
+    font-size: 25px;
+
+    margin-bottom: 8px;
+}
+
+
+/* Card subtitle */
+.card-header p {
+
+    color: #8fa4bb;
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   UPLOAD AREA
+   ========================================================= */
+
+.upload-area {
+
+    /* Dashed upload box */
+    border: 2px dashed #315675;
+
+    border-radius: 16px;
+
+    padding: 40px 20px;
+
+    text-align: center;
+
+    display: block;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    margin-bottom: 20px;
+}
+
+
+/* Upload area hover */
+.upload-area:hover {
+
+    border-color: #65d8ff;
+
+    background: #0f263e;
+}
+
+
+/* MRI icon */
+.file-icon {
+
+    width: 65px;
+
+    height: 65px;
+
+    margin: auto;
+
+    margin-bottom: 15px;
+
+    border-radius: 14px;
+
+    background: #123454;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #65d8ff;
+
+    font-weight: bold;
+
+    font-size: 18px;
+}
+
+
+/* Upload title */
+.upload-area h3 {
+
+    font-size: 17px;
+
+    margin-bottom: 8px;
+}
+
+
+/* Upload description */
+.upload-area p {
+
+    color: #8197ae;
+
+    font-size: 13px;
+
+    margin-bottom: 15px;
+}
+
+
+/* File input */
+.upload-area input {
+
+    color: #a9b9cc;
+
+    font-size: 12px;
+
+    max-width: 100%;
+}
+
+
+/* =========================================================
+   DETECT BUTTON
+   ========================================================= */
+
+.detect-button {
+
+    width: 100%;
+
+    padding: 16px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: #65d8ff;
+
+    color: #06111e;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+/* Button hover */
+.detect-button:hover {
+
+    background: #9be8ff;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 10px 25px rgba(101, 216, 255, 0.2);
+}
+
+
+/* Button click */
+.detect-button:active {
+
+    transform: translateY(0);
+}
+
+
+/* =========================================================
+   ERROR MESSAGE
+   ========================================================= */
+
+.error-message {
+
+    background: #351820;
+
+    border: 1px solid #7c3443;
+
+    color: #ff9aa9;
+
+    padding: 12px;
+
+    border-radius: 10px;
+
+    font-size: 13px;
+
+    margin-bottom: 15px;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   DISCLAIMER
+   ========================================================= */
+
+.disclaimer {
+
+    color: #71869b;
+
+    font-size: 11px;
+
+    text-align: center;
+
+    line-height: 1.5;
+
+    margin-top: 18px;
+}
+
+
+/* =========================================================
+   HOW IT WORKS SECTION
+   ========================================================= */
+
+.process-section {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 40px 30px 90px;
+}
+
+
+/* Section heading */
+.section-heading {
+
+    text-align: center;
+
+    margin-bottom: 45px;
+}
+
+
+.section-heading p {
+
+    color: #65d8ff;
+
+    font-size: 12px;
+
+    letter-spacing: 3px;
+
+    font-weight: bold;
+
+    margin-bottom: 10px;
+}
+
+
+.section-heading h2 {
+
+    font-size: 34px;
+}
+
+
+/* Process cards */
+.process-container {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 18px;
+}
+
+
+/* Individual process card */
+.process-card {
+
+    background: #0c1c30;
+
+    border: 1px solid #1e3a5f;
+
+    border-radius: 16px;
+
+    padding: 25px;
+
+    transition: 0.3s;
+}
+
+
+/* Process card hover */
+.process-card:hover {
+
+    transform: translateY(-6px);
+
+    border-color: #65d8ff;
+}
+
+
+/* Step number */
+.step-number {
+
+    color: #65d8ff;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    margin-bottom: 20px;
+}
+
+
+/* Process heading */
+.process-card h3 {
+
+    font-size: 18px;
+
+    margin-bottom: 10px;
+}
+
+
+/* Process description */
+.process-card p {
+
+    color: #8fa4bb;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+footer {
+
+    border-top: 1px solid #1e3a5f;
+
+    padding: 25px;
+
+    text-align: center;
+
+    color: #71869b;
+
+    font-size: 12px;
+}
+
+
+footer span {
+
+    color: #65d8ff;
+
+    margin: 0 8px;
+}
+
+
+/* =========================================================
+   RESPONSIVE DESIGN
+   ========================================================= */
+
+/* Tablet */
+@media (max-width: 900px) {
+
+    .hero {
+
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+
+        padding-top: 60px;
+    }
+
+
+    .hero-content {
+
+        text-align: center;
+    }
+
+
+    .description {
+
+        margin-left: auto;
+
+        margin-right: auto;
+    }
+
+
+    .features {
+
+        justify-content: center;
+    }
+
+
+    .process-container {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+}
+
+
+/* Mobile */
+@media (max-width: 600px) {
+
+    .nav-container {
+
+        padding: 16px 20px;
+    }
+
+
+    .logo {
+
+        font-size: 17px;
+    }
+
+
+    .nav-links {
+
+        gap: 15px;
+    }
+
+
+    .hero {
+
+        padding: 50px 20px;
+    }
+
+
+    .hero-content h1 {
+
+        font-size: 40px;
+    }
+
+
+    .description {
+
+        font-size: 15px;
+    }
+
+
+    .upload-card {
+
+        padding: 25px 18px;
+    }
+
+
+    .features {
+
+        flex-direction: column;
+    }
+
+
+    .feature {
+
+        width: 100%;
+    }
+
+
+    .process-section {
+
+        padding: 30px 20px 60px;
+    }
+
+
+    .process-container {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .section-heading h2 {
+
+        font-size: 28px;
+    }
+
+}

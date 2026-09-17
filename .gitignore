@@ -1,0 +1,5 @@
+Dataset/
+.venv/
+__pycache__/
+static/uploads/
+.DS_Store

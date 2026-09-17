@@ -1,0 +1,133 @@
+Image Path,Actual Class,Predicted Class,Tumor Probability,Confidence,Correct
+dataset/Testing/no tumor/MR0002 (2).jpg,No Tumor,Tumor,0.5837112069129944,0.5837112069129944,False
+dataset/Testing/no tumor/MR0002 (6).jpg,No Tumor,Tumor,0.6202415823936462,0.6202415823936462,False
+dataset/Testing/no tumor/MR0003 (3).jpg,No Tumor,Tumor,0.5989362001419067,0.5989362001419067,False
+dataset/Testing/no tumor/MR0003 (4).jpg,No Tumor,Tumor,0.5319634675979614,0.5319634675979614,False
+dataset/Testing/no tumor/MR0004 (6).jpg,No Tumor,Tumor,0.6572009921073914,0.6572009921073914,False
+dataset/Testing/no tumor/MR0004 (7).jpg,No Tumor,Tumor,0.7435280680656433,0.7435280680656433,False
+dataset/Testing/no tumor/MR0005 (5).jpg,No Tumor,Tumor,0.6197308301925659,0.6197308301925659,False
+dataset/Testing/no tumor/MR0005 (8).jpg,No Tumor,Tumor,0.7486345767974854,0.7486345767974854,False
+dataset/Testing/no tumor/MR0005 (9).jpg,No Tumor,Tumor,0.8354479670524597,0.8354479670524597,False
+dataset/Testing/no tumor/MR0006 (14).jpg,No Tumor,Tumor,0.8405219316482544,0.8405219316482544,False
+dataset/Testing/no tumor/MR0006 (15).jpg,No Tumor,Tumor,0.8850882053375244,0.8850882053375244,False
+dataset/Testing/no tumor/MR0006 (22).jpg,No Tumor,Tumor,0.7017748951911926,0.7017748951911926,False
+dataset/Testing/no tumor/MR0006 (24).jpg,No Tumor,Tumor,0.7846006155014038,0.7846006155014038,False
+dataset/Testing/no tumor/MR0006 (25).jpg,No Tumor,Tumor,0.6810783743858337,0.6810783743858337,False
+dataset/Testing/no tumor/MR0007 (13).jpg,No Tumor,Tumor,0.6491718888282776,0.6491718888282776,False
+dataset/Testing/no tumor/MR0007 (14).jpg,No Tumor,Tumor,0.5599172711372375,0.5599172711372375,False
+dataset/Testing/no tumor/MR0007 (16).jpg,No Tumor,Tumor,0.8000862002372742,0.8000862002372742,False
+dataset/Testing/no tumor/MR0007 (26).jpg,No Tumor,Tumor,0.6445890665054321,0.6445890665054321,False
+dataset/Testing/no tumor/MR0007 (27).jpg,No Tumor,Tumor,0.7224665880203247,0.7224665880203247,False
+dataset/Testing/no tumor/MR0007 (6).jpg,No Tumor,Tumor,0.8836601376533508,0.8836601376533508,False
+dataset/Testing/no tumor/MR0007 (8).jpg,No Tumor,Tumor,0.7476836442947388,0.7476836442947388,False
+dataset/Testing/no tumor/MR0008 (16).jpg,No Tumor,Tumor,0.6413987874984741,0.6413987874984741,False
+dataset/Testing/no tumor/MR0008 (24).jpg,No Tumor,Tumor,0.5740171670913696,0.5740171670913696,False
+dataset/Testing/no tumor/MR0008 (25).jpg,No Tumor,Tumor,0.8024128675460815,0.8024128675460815,False
+dataset/Testing/no tumor/MR0008 (26).jpg,No Tumor,Tumor,0.5182002782821655,0.5182002782821655,False
+dataset/Testing/no tumor/MR0008 (5).jpg,No Tumor,Tumor,0.6572572588920593,0.6572572588920593,False
+dataset/Testing/no tumor/MR0008 (6).jpg,No Tumor,Tumor,0.7691054344177246,0.7691054344177246,False
+dataset/Testing/no tumor/MR0009 (26).jpg,No Tumor,Tumor,0.645906925201416,0.645906925201416,False
+dataset/Testing/no tumor/MR0009 (6).jpg,No Tumor,Tumor,0.7334420084953308,0.7334420084953308,False
+dataset/Testing/no tumor/MR0010 (13).jpg,No Tumor,Tumor,0.6133365035057068,0.6133365035057068,False
+dataset/Testing/no tumor/MR0010 (23).jpg,No Tumor,Tumor,0.6472336053848267,0.6472336053848267,False
+dataset/Testing/no tumor/MR0010 (4).jpg,No Tumor,Tumor,0.5316681861877441,0.5316681861877441,False
+dataset/Testing/no tumor/MR0011 (26).jpg,No Tumor,Tumor,0.7275238037109375,0.7275238037109375,False
+dataset/Testing/no tumor/MR0011 (29).jpg,No Tumor,Tumor,0.50920569896698,0.50920569896698,False
+dataset/Testing/no tumor/MR0012 (13).jpg,No Tumor,Tumor,0.729185938835144,0.729185938835144,False
+dataset/Testing/no tumor/MR0012 (14).jpg,No Tumor,Tumor,0.6963459253311157,0.6963459253311157,False
+dataset/Testing/no tumor/MR0012 (25).jpg,No Tumor,Tumor,0.736436665058136,0.736436665058136,False
+dataset/Testing/no tumor/MR0012 (5).jpg,No Tumor,Tumor,0.5024901628494263,0.5024901628494263,False
+dataset/Testing/no tumor/MR0013 (13).jpg,No Tumor,Tumor,0.5721243023872375,0.5721243023872375,False
+dataset/Testing/no tumor/MR0013 (26).jpg,No Tumor,Tumor,0.6887133121490479,0.6887133121490479,False
+dataset/Testing/no tumor/MR0013 (6).jpg,No Tumor,Tumor,0.5914961695671082,0.5914961695671082,False
+dataset/Testing/no tumor/MR0014 (13).jpg,No Tumor,Tumor,0.7979220747947693,0.7979220747947693,False
+dataset/Testing/no tumor/MR0014 (16).jpg,No Tumor,Tumor,0.5231528282165527,0.5231528282165527,False
+dataset/Testing/no tumor/MR0014 (25).jpg,No Tumor,Tumor,0.6366837620735168,0.6366837620735168,False
+dataset/Testing/no tumor/MR0014 (26).jpg,No Tumor,Tumor,0.5873821377754211,0.5873821377754211,False
+dataset/Testing/no tumor/MR0014 (6).jpg,No Tumor,Tumor,0.586560070514679,0.586560070514679,False
+dataset/Testing/no tumor/MR0015 (13).jpg,No Tumor,Tumor,0.683660089969635,0.683660089969635,False
+dataset/Testing/no tumor/MR0015 (25).jpg,No Tumor,Tumor,0.681584894657135,0.681584894657135,False
+dataset/Testing/no tumor/MR0015 (26).jpg,No Tumor,Tumor,0.5069395303726196,0.5069395303726196,False
+dataset/Testing/no tumor/MR0015 (5).jpg,No Tumor,Tumor,0.6443591713905334,0.6443591713905334,False
+dataset/Testing/no tumor/MR0016 (11).jpg,No Tumor,Tumor,0.6624065041542053,0.6624065041542053,False
+dataset/Testing/no tumor/MR0017 (11).jpg,No Tumor,Tumor,0.5949068069458008,0.5949068069458008,False
+dataset/Testing/no tumor/MR0017 (14).jpg,No Tumor,Tumor,0.5227965712547302,0.5227965712547302,False
+dataset/Testing/no tumor/MR0017 (20).jpg,No Tumor,Tumor,0.5995687246322632,0.5995687246322632,False
+dataset/Testing/no tumor/Te-noTr_0003.jpg,No Tumor,Tumor,0.5176638960838318,0.5176638960838318,False
+dataset/Testing/no tumor/Te-noTr_0004.jpg,No Tumor,Tumor,0.5461304783821106,0.5461304783821106,False
+dataset/Testing/no tumor/Te-no_0017.jpg,No Tumor,Tumor,0.5526934862136841,0.5526934862136841,False
+dataset/Testing/no tumor/Te-no_0024.jpg,No Tumor,Tumor,0.7172005772590637,0.7172005772590637,False
+dataset/Testing/no tumor/Te-no_0035.jpg,No Tumor,Tumor,0.7703916430473328,0.7703916430473328,False
+dataset/Testing/no tumor/Te-no_0074.jpg,No Tumor,Tumor,0.5238459706306458,0.5238459706306458,False
+dataset/Testing/no tumor/Te-no_0079.jpg,No Tumor,Tumor,0.6803813576698303,0.6803813576698303,False
+dataset/Testing/no tumor/Te-no_0081.jpg,No Tumor,Tumor,0.7703916430473328,0.7703916430473328,False
+dataset/Testing/no tumor/Te-no_0098.jpg,No Tumor,Tumor,0.7134870290756226,0.7134870290756226,False
+dataset/Testing/no tumor/Te-no_0101.jpg,No Tumor,Tumor,0.7070485949516296,0.7070485949516296,False
+dataset/Testing/no tumor/Te-no_0104.jpg,No Tumor,Tumor,0.7399587631225586,0.7399587631225586,False
+dataset/Testing/no tumor/Te-no_0105.jpg,No Tumor,Tumor,0.7867957353591919,0.7867957353591919,False
+dataset/Testing/no tumor/Te-no_0199.jpg,No Tumor,Tumor,0.6017880439758301,0.6017880439758301,False
+dataset/Testing/no tumor/Te-no_0225.jpg,No Tumor,Tumor,0.6015022993087769,0.6015022993087769,False
+dataset/Testing/no tumor/Te-no_0228.jpg,No Tumor,Tumor,0.5404621958732605,0.5404621958732605,False
+dataset/Testing/no tumor/Te-no_0333.jpg,No Tumor,Tumor,0.5921050310134888,0.5921050310134888,False
+dataset/Testing/no tumor/Te-no_0350.jpg,No Tumor,Tumor,0.5721283555030823,0.5721283555030823,False
+dataset/Testing/tumor/Te-meTr_0001.jpg,Tumor,No Tumor,0.4419648349285126,0.5580351650714874,False
+dataset/Testing/tumor/Te-meTr_0004.jpg,Tumor,No Tumor,0.04674123600125313,0.9532587639987469,False
+dataset/Testing/tumor/Te-meTr_0005.jpg,Tumor,No Tumor,0.1318410485982895,0.8681589514017105,False
+dataset/Testing/tumor/Te-meTr_0006.jpg,Tumor,No Tumor,0.08990475535392761,0.9100952446460724,False
+dataset/Testing/tumor/Te-meTr_0009.jpg,Tumor,No Tumor,0.006733665708452463,0.9932663342915475,False
+dataset/Testing/tumor/Te-me_0011.jpg,Tumor,No Tumor,0.19986312091350555,0.8001368790864944,False
+dataset/Testing/tumor/Te-me_0012.jpg,Tumor,No Tumor,0.3623160123825073,0.6376839876174927,False
+dataset/Testing/tumor/Te-me_0013.jpg,Tumor,No Tumor,0.4618469178676605,0.5381530821323395,False
+dataset/Testing/tumor/Te-me_0015.jpg,Tumor,No Tumor,0.04952186346054077,0.9504781365394592,False
+dataset/Testing/tumor/Te-me_0016.jpg,Tumor,No Tumor,0.4943336844444275,0.5056663155555725,False
+dataset/Testing/tumor/Te-me_0017.jpg,Tumor,No Tumor,0.039790526032447815,0.9602094739675522,False
+dataset/Testing/tumor/Te-me_0019.jpg,Tumor,No Tumor,0.43619224429130554,0.5638077557086945,False
+dataset/Testing/tumor/Te-me_0020.jpg,Tumor,No Tumor,0.08685074746608734,0.9131492525339127,False
+dataset/Testing/tumor/Te-me_0022.jpg,Tumor,No Tumor,0.49975910782814026,0.5002408921718597,False
+dataset/Testing/tumor/Te-me_0023.jpg,Tumor,No Tumor,0.26754894852638245,0.7324510514736176,False
+dataset/Testing/tumor/Te-me_0024.jpg,Tumor,No Tumor,0.43161699175834656,0.5683830082416534,False
+dataset/Testing/tumor/Te-me_0025.jpg,Tumor,No Tumor,0.25667518377304077,0.7433248162269592,False
+dataset/Testing/tumor/Te-me_0030.jpg,Tumor,No Tumor,0.26068928837776184,0.7393107116222382,False
+dataset/Testing/tumor/Te-me_0032.jpg,Tumor,No Tumor,0.1833372861146927,0.8166627138853073,False
+dataset/Testing/tumor/Te-me_0033.jpg,Tumor,No Tumor,0.24401509761810303,0.755984902381897,False
+dataset/Testing/tumor/Te-me_0034.jpg,Tumor,No Tumor,0.17892172932624817,0.8210782706737518,False
+dataset/Testing/tumor/Te-me_0035.jpg,Tumor,No Tumor,0.38342544436454773,0.6165745556354523,False
+dataset/Testing/tumor/Te-me_0036.jpg,Tumor,No Tumor,0.015559600666165352,0.9844403993338346,False
+dataset/Testing/tumor/Te-me_0037.jpg,Tumor,No Tumor,0.013654542155563831,0.9863454578444362,False
+dataset/Testing/tumor/Te-me_0039.jpg,Tumor,No Tumor,0.2655255198478699,0.7344744801521301,False
+dataset/Testing/tumor/Te-me_0040.jpg,Tumor,No Tumor,0.4214867651462555,0.5785132348537445,False
+dataset/Testing/tumor/Te-me_0041.jpg,Tumor,No Tumor,0.47815388441085815,0.5218461155891418,False
+dataset/Testing/tumor/Te-me_0046.jpg,Tumor,No Tumor,0.3906520903110504,0.6093479096889496,False
+dataset/Testing/tumor/Te-me_0047.jpg,Tumor,No Tumor,0.17036645114421844,0.8296335488557816,False
+dataset/Testing/tumor/Te-me_0049.jpg,Tumor,No Tumor,0.10215631872415543,0.8978436812758446,False
+dataset/Testing/tumor/Te-me_0062.jpg,Tumor,No Tumor,0.38150790333747864,0.6184920966625214,False
+dataset/Testing/tumor/Te-me_0069.jpg,Tumor,No Tumor,0.07806435972452164,0.9219356402754784,False
+dataset/Testing/tumor/Te-me_0078.jpg,Tumor,No Tumor,0.3943970501422882,0.6056029498577118,False
+dataset/Testing/tumor/Te-me_0079.jpg,Tumor,No Tumor,0.3422434329986572,0.6577565670013428,False
+dataset/Testing/tumor/Te-me_0080.jpg,Tumor,No Tumor,0.46176326274871826,0.5382367372512817,False
+dataset/Testing/tumor/Te-me_0081.jpg,Tumor,No Tumor,0.0351528562605381,0.9648471437394619,False
+dataset/Testing/tumor/Te-me_0082.jpg,Tumor,No Tumor,0.007669081445783377,0.9923309185542166,False
+dataset/Testing/tumor/Te-me_0085.jpg,Tumor,No Tumor,0.27653127908706665,0.7234687209129333,False
+dataset/Testing/tumor/Te-me_0089.jpg,Tumor,No Tumor,0.40909403562545776,0.5909059643745422,False
+dataset/Testing/tumor/Te-me_0090.jpg,Tumor,No Tumor,0.3123752474784851,0.6876247525215149,False
+dataset/Testing/tumor/Te-me_0091.jpg,Tumor,No Tumor,0.20871345698833466,0.7912865430116653,False
+dataset/Testing/tumor/Te-me_0093.jpg,Tumor,No Tumor,0.1411714255809784,0.8588285744190216,False
+dataset/Testing/tumor/Te-me_0094.jpg,Tumor,No Tumor,0.3582216799259186,0.6417783200740814,False
+dataset/Testing/tumor/Te-me_0096.jpg,Tumor,No Tumor,0.21927188336849213,0.7807281166315079,False
+dataset/Testing/tumor/Te-me_0098.jpg,Tumor,No Tumor,0.290834903717041,0.709165096282959,False
+dataset/Testing/tumor/Te-me_0099.jpg,Tumor,No Tumor,0.06739647686481476,0.9326035231351852,False
+dataset/Testing/tumor/Te-me_0100.jpg,Tumor,No Tumor,0.1950685977935791,0.8049314022064209,False
+dataset/Testing/tumor/Te-me_0101.jpg,Tumor,No Tumor,0.09321504831314087,0.9067849516868591,False
+dataset/Testing/tumor/Te-me_0102.jpg,Tumor,No Tumor,0.24211609363555908,0.7578839063644409,False
+dataset/Testing/tumor/Te-me_0104.jpg,Tumor,No Tumor,0.18404941260814667,0.8159505873918533,False
+dataset/Testing/tumor/Te-me_0105.jpg,Tumor,No Tumor,0.010532451793551445,0.9894675482064486,False
+dataset/Testing/tumor/Te-me_0106.jpg,Tumor,No Tumor,0.35770106315612793,0.6422989368438721,False
+dataset/Testing/tumor/Te-me_0107.jpg,Tumor,No Tumor,0.039735231548547745,0.9602647684514523,False
+dataset/Testing/tumor/Te-me_0108.jpg,Tumor,No Tumor,0.0851808711886406,0.9148191288113594,False
+dataset/Testing/tumor/Te-me_0111.jpg,Tumor,No Tumor,0.02291770838201046,0.9770822916179895,False
+dataset/Testing/tumor/Te-me_0112.jpg,Tumor,No Tumor,0.009617996402084827,0.9903820035979152,False
+dataset/Testing/tumor/Te-me_0113.jpg,Tumor,No Tumor,0.07719943672418594,0.9228005632758141,False
+dataset/Testing/tumor/Te-me_0114.jpg,Tumor,No Tumor,0.41414713859558105,0.585852861404419,False
+dataset/Testing/tumor/Te-me_0131.jpg,Tumor,No Tumor,0.45810121297836304,0.541898787021637,False
+dataset/Testing/tumor/Te-me_0143.jpg,Tumor,No Tumor,0.35770106315612793,0.6422989368438721,False
+dataset/Testing/tumor/Te-me_0270.jpg,Tumor,No Tumor,0.4024955630302429,0.5975044369697571,False

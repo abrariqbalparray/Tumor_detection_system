@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Tell the browser to use UTF-8 character encoding. -->
+    <meta charset="UTF-8">
+
+    <!-- Make the website responsive on phones and tablets. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title shown in the browser tab. -->
+    <title>Prediction Result - Brain Tumor Detection</title>
+
+    <!-- Connect the website to our CSS file. -->
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+
+<body>
+
+    <!-- Navigation bar. -->
+    <nav class="navbar">
+
+        <!-- Website/project name. -->
+        <div class="logo">
+            Brain Tumor Detection
+        </div>
+
+        <!-- Navigation links. -->
+        <div class="nav-links">
+
+            <a href="/">
+                Home
+            </a>
+
+            <a href="/about">
+                About
+            </a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- Main result section. -->
+    <main class="result-container">
+
+        <!-- Page heading. -->
+        <h1>
+            Prediction Result
+        </h1>
+
+
+        <!-- Display the uploaded MRI image. -->
+        <div class="result-image-card">
+
+            <img src="{{ image_path }}"
+                 alt="Uploaded Brain MRI">
+
+        </div>
+
+
+        <!-- Display the model prediction. -->
+        <div class="prediction-card">
+
+            <h2>
+                {{ result }}
+            </h2>
+
+
+            <!-- Display confidence percentage. -->
+            <p class="confidence">
+
+                Confidence:
+                <strong>
+                    {{ confidence }}%
+                </strong>
+
+            </p>
+
+
+            <!-- Display tumor probability. -->
+            <p>
+
+                Tumor Probability:
+                <strong>
+                    {{ tumor_probability }}%
+                </strong>
+
+            </p>
+
+        </div>
+
+
+        <!-- Button to test another MRI image. -->
+        <a href="/" class="back-button">
+
+            Test Another Image
+
+        </a>
+
+    </main>
+
+
+    <!-- Footer. -->
+    <footer>
+
+        <p>
+            Academic project for brain MRI tumor detection.
+        </p>
+
+        <p>
+            This system is for educational/research purposes
+            and is not a medical diagnosis.
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

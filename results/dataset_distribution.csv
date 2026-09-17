@@ -1,0 +1,5 @@
+Dataset,Class,Image_Count
+Testing,No Tumor,910
+Testing,Tumor,906
+Training,No Tumor,4160
+Training,Tumor,4117
