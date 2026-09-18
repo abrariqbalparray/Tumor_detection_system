@@ -12,7 +12,8 @@
     <!-- Title shown in the browser tab. -->
     <title>Prediction Result - Brain Tumor Detection</title>
 
-    <!-- Connect the website to our CSS file. -->
+    <!-- Connect this page to the same separate CSS file
+         used by the rest of the Flask website. -->
     <link rel="stylesheet"
           href="{{ url_for('static', filename='css/style.css') }}">
 
@@ -21,32 +22,53 @@
 
 <body>
 
-    <!-- Navigation bar. -->
+
+    <!-- =====================================================
+         NAVIGATION BAR
+         ===================================================== -->
+
     <nav class="navbar">
 
-        <!-- Website/project name. -->
-        <div class="logo">
-            Brain Tumor Detection
-        </div>
+        <div class="nav-container">
 
-        <!-- Navigation links. -->
-        <div class="nav-links">
 
-            <a href="/">
-                Home
+            <!-- Website/project name.
+                 Clicking this returns to the Flask home route. -->
+            <a href="{{ url_for('home') }}" class="logo">
+
+                Brain MRI <span>Detection</span>
+
             </a>
 
-            <a href="/about">
-                About
-            </a>
+
+            <!-- Navigation links. -->
+            <div class="nav-links">
+
+                <!-- Home route. -->
+                <a href="{{ url_for('home') }}">
+                    Home
+                </a>
+
+
+                <!-- About route. -->
+                <a href="{{ url_for('about') }}">
+                    About
+                </a>
+
+            </div>
 
         </div>
 
     </nav>
 
 
-    <!-- Main result section. -->
+
+    <!-- =====================================================
+         MAIN RESULT SECTION
+         ===================================================== -->
+
     <main class="result-container">
+
 
         <!-- Page heading. -->
         <h1>
@@ -54,27 +76,57 @@
         </h1>
 
 
-        <!-- Display the uploaded MRI image. -->
+
+        <!-- =================================================
+             UPLOADED MRI IMAGE
+             ================================================= -->
+
         <div class="result-image-card">
 
-            <img src="{{ image_path }}"
-                 alt="Uploaded Brain MRI">
+            <!--
+                image_path is sent by app.py.
+
+                Example:
+                /static/uploads/mri.jpg
+            -->
+
+            <img
+                src="{{ image_path }}"
+                alt="Uploaded Brain MRI"
+            >
 
         </div>
 
 
-        <!-- Display the model prediction. -->
+
+        <!-- =================================================
+             MODEL PREDICTION
+             ================================================= -->
+
         <div class="prediction-card">
+
+
+            <!--
+                result is sent by Flask.
+
+                Possible values:
+                Tumor Present
+                No Tumor
+            -->
 
             <h2>
                 {{ result }}
             </h2>
 
 
-            <!-- Display confidence percentage. -->
+            <!-- =================================================
+                 CONFIDENCE
+                 ================================================= -->
+
             <p class="confidence">
 
                 Confidence:
+
                 <strong>
                     {{ confidence }}%
                 </strong>
@@ -82,42 +134,88 @@
             </p>
 
 
-            <!-- Display tumor probability. -->
+            <!-- =================================================
+                 TUMOR PROBABILITY
+                 ================================================= -->
+
             <p>
 
                 Tumor Probability:
+
                 <strong>
                     {{ tumor_probability }}%
                 </strong>
 
             </p>
 
+
         </div>
 
 
-        <!-- Button to test another MRI image. -->
-        <a href="/" class="back-button">
+
+        <!-- =================================================
+             TEST ANOTHER IMAGE
+             ================================================= -->
+
+        <!--
+            url_for('home') sends the user back to index.html
+            through Flask's home route.
+        -->
+
+        <a
+            href="{{ url_for('home') }}"
+            class="back-button"
+        >
 
             Test Another Image
 
         </a>
 
+
     </main>
 
 
-    <!-- Footer. -->
-    <footer>
 
-        <p>
-            Academic project for brain MRI tumor detection.
-        </p>
+    <!-- =====================================================
+         FOOTER
+         ===================================================== -->
 
-        <p>
-            This system is for educational/research purposes
+    <footer class="footer">
+
+
+        <div>
+
+            <strong>
+                Brain MRI Tumor Detection
+            </strong>
+
+            &nbsp; | &nbsp;
+
+            Academic Project
+
+        </div>
+
+
+        <div>
+
+            Built with ❤️ using
+            Python, TensorFlow &amp; Flask
+
+        </div>
+
+
+        <!-- Academic/medical disclaimer. -->
+        <div>
+
+            This system is intended for
+            academic and research purposes only
             and is not a medical diagnosis.
-        </p>
+
+        </div>
+
 
     </footer>
+
 
 </body>
 
