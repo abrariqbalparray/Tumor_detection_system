@@ -1,6 +1,5 @@
 Flask
-tensorflow==2.20.0
-numpy
-Pillow
 gunicorn
-Werkzeug
+tensorflow
+Pillow
+numpy
